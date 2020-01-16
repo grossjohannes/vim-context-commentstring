@@ -29,7 +29,7 @@ endfunction
 function! s:UpdateCommentString()
 	let stack = synstack(line('.'), col('.'))
 	if !empty(stack)
-		for name in map(stack, 'synIDattr(v:val, "name")')
+		for name in reverse(map(stack, 'synIDattr(v:val, "name")'))
 			if has_key(g:context#commentstring#table[&filetype], name)
 				let &l:commentstring = g:context#commentstring#table[&filetype][name]
 				return

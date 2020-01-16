@@ -1,3 +1,10 @@
+# Changes
+
+- Reverse synstack before finding first match in context#commentstring#table
+
+# Original readme
+
+```
 See the documentation in the doc/context-commentstring.txt file, or browse it
 online from the hosted source code in:
 
@@ -6,3 +13,4 @@ https://raw.github.com/suy/vim-context-commentstring/master/doc/context-comments
 Or HTML formatted (thanks to Kana Natsuno's vim-doc.heroku.com) at:
 
 http://ur1.ca/e7x0q
+```
